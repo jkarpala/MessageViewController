@@ -10,7 +10,7 @@ import UIKit
 
 open class MessageViewController: UIViewController, MessageAutocompleteControllerLayoutDelegate {
 
-    public let messageView = MessageView()
+    public let messageView = MVCMessageView()
     public private(set) lazy var messageAutocompleteController: MessageAutocompleteController = {
         return MessageAutocompleteController(textView: self.messageView.textView)
     }()

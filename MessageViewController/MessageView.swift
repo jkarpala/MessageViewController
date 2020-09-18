@@ -8,7 +8,7 @@
 
 import UIKit
 
-public final class MessageView: UIView, MessageTextViewListener {
+public final class MVCMessageView: UIView, MessageTextViewListener {
 
     public let textView = MessageTextView()
 

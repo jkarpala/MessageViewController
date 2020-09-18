@@ -10,16 +10,16 @@ import UIKit
 
 extension MessageViewController: MessageViewDelegate {
 
-    internal func sizeDidChange(messageView: MessageView) {
+    internal func sizeDidChange(messageView: MVCMessageView) {
         UIView.animate(withDuration: 0.25) {
             self.layout(updateOffset: true)
         }
     }
 
-    internal func wantsLayout(messageView: MessageView) {
+    internal func wantsLayout(messageView: MVCMessageView) {
         view.setNeedsLayout()
     }
 
-    internal func selectionDidChange(messageView: MessageView) {}
+    internal func selectionDidChange(messageView: MVCMessageView) {}
 
 }
